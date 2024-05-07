@@ -15,7 +15,8 @@ struct Settings: View {
     var body: some View {
         VStack {
             Text("Settings")
-            
+                
+                
             Toggle(isOn: $darkMode) {
                 Text("Dark mode")
             }.padding()
@@ -39,9 +40,9 @@ struct Settings: View {
                         
                     }
                 }
-            }
+            }.padding()
                         
-                
+            
                 
 //                    .alert(Alert(title: Text("Alert"),
 //                                 message: Text("Delete all favorites"),
@@ -50,18 +51,25 @@ struct Settings: View {
 //                isPresented: $showAlertDelete,
 //                actions: <#T##() -> View#>)
                 
+            
+        HStack {
+            Text("Application version:")
+            Spacer()
+            Text("Version 1.0.0")
+        }.padding()
                 
                 
-                
-            }.padding()
-                
-            HStack {
-                Text("Application version:")
-                Spacer()
-                Text("Version 1.0.0")
-            }.padding()
             
            
+            
+            
+        
+            }
+        .background(Image("backSettings").opacity(0.5))
+        
+            
+          
+          
                         
                 
                 
