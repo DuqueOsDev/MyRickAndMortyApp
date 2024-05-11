@@ -9,10 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+   @ObservedObject var model = CharactersListViewModel()
+    
     @State private var indice = 0
     
     var body: some View {
         VStack {
+            
+            List(model.characters) { charters in
+                Text(charters.name)
+            }
+            
             TabView(selection: $indice,
                     content:  {
                 

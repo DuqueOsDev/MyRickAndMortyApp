@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5F080B2BEAD94800FC0BF3 /* ConectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F080A2BEAD94800FC0BF3 /* ConectionManager.swift */; };
+		9A5F080D2BEADC6500FC0BF3 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F080C2BEADC6500FC0BF3 /* CharactersModel.swift */; };
+		9A6177982BEBF0BA00A59FCC /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6177972BEBF0BA00A59FCC /* CharactersListViewModel.swift */; };
 		9A9BFD4E2BE66AAB00B3D624 /* MyRickAndMortyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BFD4D2BE66AAB00B3D624 /* MyRickAndMortyAppApp.swift */; };
 		9A9BFD502BE66AAB00B3D624 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9BFD4F2BE66AAB00B3D624 /* ContentView.swift */; };
 		9A9BFD522BE66AAC00B3D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9BFD512BE66AAC00B3D624 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A5F080A2BEAD94800FC0BF3 /* ConectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectionManager.swift; sourceTree = "<group>"; };
+		9A5F080C2BEADC6500FC0BF3 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		9A6177972BEBF0BA00A59FCC /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
 		9A9BFD4A2BE66AAB00B3D624 /* MyRickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9BFD4D2BE66AAB00B3D624 /* MyRickAndMortyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRickAndMortyAppApp.swift; sourceTree = "<group>"; };
 		9A9BFD4F2BE66AAB00B3D624 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A6177942BEBEF6F00A59FCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A5F080C2BEADC6500FC0BF3 /* CharactersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A6177952BEBEF7C00A59FCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A9BFD4F2BE66AAB00B3D624 /* ContentView.swift */,
+				9AC866CB2BE6F52C004ACFD9 /* Characters.swift */,
+				9AC866CD2BE6F56C004ACFD9 /* Episodes.swift */,
+				9AC866CF2BE6F580004ACFD9 /* Favorites.swift */,
+				9AC866D12BE6F5A3004ACFD9 /* Settings.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A6177962BEBEF8600A59FCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9A9BFD412BE66AAB00B3D624 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +92,12 @@
 		9A9BFD4C2BE66AAB00B3D624 /* MyRickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A6177962BEBEF8600A59FCC /* ViewModel */,
+				9A6177952BEBEF7C00A59FCC /* View */,
+				9A6177942BEBEF6F00A59FCC /* Model */,
+				9A5F080A2BEAD94800FC0BF3 /* ConectionManager.swift */,
 				9A9BFD4D2BE66AAB00B3D624 /* MyRickAndMortyAppApp.swift */,
-				9A9BFD4F2BE66AAB00B3D624 /* ContentView.swift */,
-				9AC866CB2BE6F52C004ACFD9 /* Characters.swift */,
-				9AC866CD2BE6F56C004ACFD9 /* Episodes.swift */,
-				9AC866CF2BE6F580004ACFD9 /* Favorites.swift */,
-				9AC866D12BE6F5A3004ACFD9 /* Settings.swift */,
+				9A6177972BEBF0BA00A59FCC /* CharactersListViewModel.swift */,
 				9A9BFD512BE66AAC00B3D624 /* Assets.xcassets */,
 				9A9BFD532BE66AAC00B3D624 /* Preview Content */,
 			);
@@ -149,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6177982BEBF0BA00A59FCC /* CharactersListViewModel.swift in Sources */,
+				9A5F080B2BEAD94800FC0BF3 /* ConectionManager.swift in Sources */,
 				9AC866D22BE6F5A3004ACFD9 /* Settings.swift in Sources */,
 				9A9BFD502BE66AAB00B3D624 /* ContentView.swift in Sources */,
+				9A5F080D2BEADC6500FC0BF3 /* CharactersModel.swift in Sources */,
 				9AC866CE2BE6F56C004ACFD9 /* Episodes.swift in Sources */,
 				9AC866CC2BE6F52C004ACFD9 /* Characters.swift in Sources */,
 				9AC866D02BE6F580004ACFD9 /* Favorites.swift in Sources */,
